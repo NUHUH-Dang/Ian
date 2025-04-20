@@ -1,4 +1,4 @@
- body {
+  body {
             background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
             color: white;
             font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -28,10 +28,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between; 
-            min-height: 100vh;
-            padding-bottom: 50px;
-            box-sizing: border-box; 
+            justify-content: space-between; /* Added to distribute space */
+            min-height: 100vh; /* Ensure content takes full viewport height */
+            padding-bottom: 50px; /* Add some padding at the bottom */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
         }
 
         .navigation {
@@ -178,9 +178,10 @@
         }
 
         footer {
+            margin-top: auto;
             padding: 25px;
             color: #777777;
-            text-align: center;
+            text-align: center; /* Center the footer content */
             width: 100%;
             box-sizing: border-box;
             position: relative;
@@ -192,17 +193,16 @@
             text-decoration: none;
             transition: all 0.3s ease;
             display: inline-block;
-            padding: 10px 20px; 
-            border-radius: 12px; 
-            background-color: rgba(255, 255, 255, 0.08);
-            font-size: 16px; 
+            padding: 8px 15px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.05);
         }
 
         footer a:hover {
             color: #ffffff;
-            background-color: rgba(255, 255, 255, 0.15); 
+            background-color: rgba(255, 255, 255, 0.1);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         @media (max-width: 600px) {
@@ -218,6 +218,7 @@
             .title {
                 font-size: 26px;
             }
+        }
 
             footer a {
                 padding: 8px 15px;
